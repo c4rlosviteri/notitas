@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Notitas</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<header>
+		<h1><span class="icon-notebook"></span>Notitas</h1>
+		<a href="#"><span class="icon-plus"></span>Añadir</a>
+	</header>	
+	<section>
+		<form id="formulario">
+			<h3>Añadir nota</h3>
+			<span class="icon-cancel-circle"></span>
+			<input type="text" placeholder="Título" required id="titulo">
+			<input type="url" placeholder="Link" id="link">
+			<textarea placeholder="Escribe algo..." required id="texto"></textarea>
+			<button type="submit">Añadir<span class="icon-paperplane"><span></button>
+		</form>
+		<div id="notas">
+			<article id="nota">
+				<h2>Primera nota</h2>
+				<a href="http://jquery.com"><span class="icon-link"></span>Link</a>
+				<p>Sistema de notas heho con HTML5, CSS3 y jQuery.</p>
+			</article>
+		</div>
+	</section>
+	<footer>
+		<p><a href="https://github.com/niclick"><span class="icon-github"></span>niclick</a></p>
+		<p>v 0.01 dev</p>
+	</footer>
+	<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
