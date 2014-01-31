@@ -7,7 +7,7 @@ $(function(){
 		$notas = $('#notas'),
 		$texto = $('#texto');
 
-	function mostrarForm () {
+	function mostrarForm (){
 		$formulario.slideToggle();
 		return false;
 	}
