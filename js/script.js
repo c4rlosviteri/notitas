@@ -18,7 +18,7 @@ $(function(){
 			texto = $texto.val(),
 			clone = $primeraNota.clone();
 
-			if ($link.val()>1){
+			if ($('#link').val().length>1){
 				clone.find('a').attr('href', link);
 			}else {
 				clone.find('a').remove();
