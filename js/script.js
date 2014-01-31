@@ -18,8 +18,13 @@ $(function(){
 			texto = $texto.val(),
 			clone = $primeraNota.clone();
 
+			if ($link.val()>1){
+				clone.find('a').attr('href', link);
+			}else {
+				clone.find('a').remove();
+			}
+
 		clone.find('h2').text(titulo);
-		clone.find('a').attr('href', link);
 		clone.find('p').text(texto);
 		clone.hide();
 		$notas.prepend(clone);

@@ -6,7 +6,7 @@
 .icon-link:before{content:'\e602';margin:0 .33em 0 0}
 .icon-plus:before{content:'\e603';margin:0 .5em 0 0}
 .icon-pushpin:before{content:'\e604'}
-.icon-paperplane:before{content:"\e605";margin:0 0 0 .25em}
+.icon-paperplane:before{content:"\e605";margin:0 0 0 .3em}
 .icon-cancel-circle:before{content:"\e606"}
 body{background:#ecf0f1;font-family:'Open Sans';font-size:16px}
 footer{margin:1em;}
