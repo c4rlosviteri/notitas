@@ -16,7 +16,7 @@ header{background:#3498db;padding:.75em 0;position:relative;}
 header a{background:#2980b9;-webkit-border-radius:.25em;border-radius:.25em;color:#fff;padding:.5em .75em;position:absolute;right:1em;text-decoration:none;top:1em}
 header h1{color:#fff;margin:0;text-transform:lowercase}
 section{max-width:768px;margin:0 auto;width:90%;}
-section article{background:#fff;border:1px solid #dedede;-webkit-border-radius:.25em;border-radius:.25em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:1em 0;padding:1em 2em;}
+section article{background:#fff;border:1px solid #dedede;-webkit-border-radius:.25em;border-radius:.25em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;display:none;margin:1em 0;padding:1em 2em;}
 section article a{background:#3498db;-webkit-border-radius:.25em;border-radius:.25em;color:#fff;font-style:italic;padding:.25em .5em;text-decoration:none}
 section form{display:none;margin:2em 0;position:relative;overflow:auto;}
 section form button{background:#3498db;border:none;-webkit-border-radius:.25em;border-radius:.25em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;color:#fff;float:right;font-family:'Open Sans';margin:.125em 0;padding:.5em 1em}
@@ -25,3 +25,4 @@ section form input{display:block}
 section form input[type='text'],section form input[type='url']{border:1px solid #dedede;-webkit-border-radius:.25em;border-radius:.25em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:.25em 0;max-width:200px;padding:.3em .8em;width:100%}
 section form textarea{border:1px solid #dedede;-webkit-border-radius:.25em;border-radius:.25em;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:.125em 0;max-width:768px;padding:.5em .8em;resize:vertical;width:100%}
 section form .icon-cancel-circle{cursor:pointer;font-size:1.5em;position:absolute;right:0;top:.4em}
+section #aviso{font-weight:normal;text-align:center}

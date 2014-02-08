@@ -3,20 +3,23 @@ $(function(){
 	var $formulario = $('#formulario'),
 		$titulo = $('#titulo'),
 		$link = $('#link'),
-		$primeraNota = $('#nota').first(),
+		$primeraNota = $('#nota'),
 		$notas = $('#notas'),
-		$texto = $('#texto');
+		$texto = $('#texto'),
+		$aviso = $('#aviso');
 
-	function mostrarForm (){
+	function mostrarForm (e){
 		$formulario.slideToggle();
-		return false;
+		e.preventDefault();
 	}
 
-	function agregarNota(){
+	function agregarNota(e){
 		var titulo = $titulo.val(),
 			link = $link.val(),
 			texto = $texto.val(),
-			clone = $primeraNota.clone();
+			clone = $primeraNota
+							.clone()
+							.css('display', 'block');
 
 			if ($('#link').val().length>1){
 				clone.find('a').attr('href', link);
@@ -27,9 +30,10 @@ $(function(){
 		clone.find('h2').text(titulo);
 		clone.find('p').text(texto);
 		clone.hide();
+		$aviso.remove();
 		$notas.prepend(clone);
 		clone.slideDown();
-		return false;
+		e.preventDefault();
 	}
 
 	$('header a').click(mostrarForm);
