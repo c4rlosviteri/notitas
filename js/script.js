@@ -34,6 +34,9 @@ $(function(){
 		$notas.prepend(clone);
 		clone.slideDown();
 		e.preventDefault();
+		$titulo.val('');
+		$link.val('');
+		$texto.val('');
 	}
 
 	$('header a').click(mostrarForm);
