@@ -10,29 +10,33 @@
 <body>
 	<header>
 		<h1><span class="icon-notebook"></span>Notitas</h1>
-		<a href="#"><span class="icon-plus"></span>Añadir</a>
+		<a href="#">Añadir</a>
 	</header>	
 	<section>
 		<form id="formulario">
 			<h3>Añadir nota</h3>
-			<span class="icon-cancel-circle"></span>
+			<span class="icon-close"></span>
 			<input type="text" placeholder="Título" required id="titulo">
 			<input type="url" placeholder="Link" id="link">
 			<textarea placeholder="Escribe algo..." required id="texto"></textarea>
-			<button type="submit">Añadir<span class="icon-paperplane"><span></button>
+			<button type="submit">Añadir</button>
 		</form>
 		<div id="notas">
 			<article id="nota">
 				<h2>Primera nota</h2>
-				<a href="http://twitter.com/niclick"><span class="icon-link"></span>Link</a>
+				<a href="http://twitter.com/niclick">
+					<span class="icon-link"></span>Link
+				</a>
 				<p>Sistema de notas heho con HTML5, CSS3, JS y jQuery.</p>
 			</article>
-			<h2 id="aviso">¡Aún no hay notas!</h2>
+			<h4 id="aviso">
+				<p><span>¡Aún no tienes notas!</span></p>
+			</h4>
 		</div>
 	</section>
 	<footer>
-		<p><a href="https://github.com/niclick"><span class="icon-github"></span>niclick</a></p>
-		<p>v 0.02 dev</p>
+		<p><a href="https://github.com/niclick" target="_blank"><span class="icon-github"></span>niclick</a></p>
+		<p>v 0.03 dev</p>
 	</footer>
 	<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="js/script.js"></script>

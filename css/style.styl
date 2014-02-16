@@ -1,19 +1,23 @@
 @font-face
 	font-family 'notitas'
-	src url('../fonts/notitas.eot')
-	src url('../fonts/notitas.eot?#iefix') format('embedded-opentype')
-	src	url('../fonts/notitas.woff') format('woff')
-	src	url('../fonts/notitas.ttf') format('truetype')
-	src	url('../fonts/notitas.svg#notitas') format('svg')
+	src url('../fonts/notitas.eot?-z1w5nz')
+	src url('../fonts/notitas.eot?#iefix-z1w5nz') format('embedded-opentype')
+	src	url('../fonts/notitas.woff?-z1w5nz') format('woff')
+	src	url('../fonts/notitas.ttf?-z1w5nz') format('truetype')
+	src	url('../fonts/notitas.svg?-z1w5nz#notitas') format('svg')
 	font-weight normal
 	font-style normal
 
 @import 'nib/vendor'
 
-@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700')
+@import url('http://fonts.googleapis.com/css?family=Montserrat:400,700')
 
 vendor-prefixes = moz webkit o ms official
 
+verde = #4bb980
+amarillo = #fcbe46
+rojo = #ec544c
+azul = #138fce
 
 [class^='icon-'], [class*=' icon-']
 	font-family 'notitas'
@@ -27,67 +31,69 @@ vendor-prefixes = moz webkit o ms official
 
 .icon-notebook:before
 	content '\e600'
-	font-size 0.8em
-	margin 0 0.325em 0 0.5em
+	margin 0 0.25em 0 0.5em
 
 .icon-github:before 
 	content '\e601'
 	margin 0 0.25em 0 0
 
 .icon-link:before 
-	content: '\e602'
-	margin 0 0.33em 0 0
+	content '\e602'
 
-.icon-plus:before
-	content: '\e603'
-	margin 0 0.5em 0 0
+.icon-add:before 
+	content '\e603'
 
-.icon-pushpin:before
-	content '\e604'
+.icon-close
+	cursor pointer
 
-.icon-paperplane:before 
-	content "\e605"
-	margin 0 0 0 0.3em
+	&:before 
+		content '\e604'
+		font-size 1.5em
+		position absolute
+		right 0
+		top 0.3em
 
-.icon-cancel-circle:before
-	content "\e606"
+.icon-arrow-up-right:before 
+	content '\e605'
+
 
 body
 	background #ecf0f1
-	font-family 'Open Sans'
+	font-family 'Montserrat'
 	font-size 16px
 
 footer
 	margin 1em
 
 	p
-		color #aaa
+		color #bbb
 		margin 0
 		text-align center
 
 		a
-			color #3498db
-			text-decoration none			
+			color azul
+			text-decoration none		
 
 header
-	background #3498db
+	background verde
 	padding 0.75em 0
 	position relative
 
 	a
-		background #2980b9
+		background darken(verde, 15%)
 		border-radius 0.25em
 		color white
 		padding 0.5em 0.75em
 		position absolute
 		right 1em
 		text-decoration none
+		text-transform uppercase
 		top 1em
 
 	h1
 		color white
 		margin 0
-		text-transform lowercase
+		text-transform uppercase
 
 section
 	max-width 768px
@@ -104,7 +110,7 @@ section
 		padding 1em 2em
 
 		a
-			background #3498db
+			background azul
 			border-radius 0.25em
 			color white
 			font-style italic
@@ -114,22 +120,25 @@ section
 	form 
 		display none
 		margin 2em 0
+		padding 0 0 5px 0
 		position relative
 		overflow auto
 
 		button
-			background #3498db
+			background verde
 			border none
 			border-radius 0.25em
 			box-sizing border-box
 			color white
 			float right
-			font-family 'Open Sans'
+			font-family 'Montserrat'
 			margin 0.125em 0
 			padding 0.5em 1em
+			text-transform uppercase
 
 		h3
 			margin 0.5em 0
+			text-transform uppercase
 
 		input
 			display block
@@ -140,6 +149,7 @@ section
 			box-sizing border-box
 			margin 0.25em 0
 			max-width 200px
+			outline 0
 			padding 0.3em 0.8em
 			width 100%
 
@@ -149,6 +159,8 @@ section
 			box-sizing border-box
 			margin 0.125em 0
 			max-width 768px
+			min-height 80px
+			outline 0
 			padding 0.5em 0.8em
 			resize vertical
 			width 100%
@@ -161,5 +173,13 @@ section
 			top 0.4em
 
 	#aviso
+		border-radius 4px
 		font-weight normal
+		margin 2em 0
 		text-align center
+		text-transform uppercase
+
+		span 
+			background rojo
+			color white
+			padding 0.25em 0.5em

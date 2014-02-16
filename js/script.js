@@ -40,7 +40,7 @@ $(function(){
 	}
 
 	$('header a').click(mostrarForm);
-	$('.icon-cancel-circle').click(mostrarForm);
+	$('.icon-close').click(mostrarForm);
 	$('#formulario').on('submit', agregarNota);
 	$('#formulario').on('submit', mostrarForm);
 
